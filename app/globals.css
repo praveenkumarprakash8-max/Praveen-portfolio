@@ -1641,3 +1641,32 @@ textarea::placeholder {
     margin-right: auto;
   }
 }
+
+.art-core {
+  width: 230px;
+  height: 230px;
+  min-width: 230px;
+  min-height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.art-core img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .art-core {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+}

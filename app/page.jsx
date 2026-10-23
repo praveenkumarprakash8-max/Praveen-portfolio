@@ -298,12 +298,13 @@ export default function Home() {
             <img
               src="/praveen.jpeg"
               alt="Praveen Kumar - MERN Stack Developer"
-              width={230}
-              height={230}
               style={{
                 borderRadius: "50%",
                 objectFit: "cover",
                 objectPosition: "center top",
+                width: "100%",
+                height: "100%",
+                display: "block",
               }}
             />
           </div>
