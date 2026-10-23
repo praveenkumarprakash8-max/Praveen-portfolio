@@ -1613,3 +1613,31 @@ textarea::placeholder {
     border-radius: 14px;
   }
 }
+
+/* Profile photo ko perfect circle banane ke liye */
+.profile-photo-frame {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .profile-photo-frame {
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
